@@ -48,7 +48,7 @@ This template leverages:
 
 1. **Clone the repository:**
    ```
-   git clone <repository-url>
+   git clone https://github.com/sdi2200262/BeLLa-NERT.git
    cd monorepo-template
    ```
 
