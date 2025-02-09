@@ -20,7 +20,12 @@ This template leverages:
  │   ├── config/
  │   │   ├── vite.config.ts
  │   │   ├── tailwind.config.cjs
+ │   │   ├── postcss.config.js
  │   │   └── shadcn.config.js
+ │   ├── public/
+ │   │   ├── icons/
+ │   │   ├── images/
+ │   │   └── favicon.ico
  │   ├── src/
  │   │   ├── components/
  │   │   │   └── ui/
@@ -30,7 +35,9 @@ This template leverages:
  │   │   └── main.tsx
  │   ├── index.html
  │   ├── package.json
+ │   ├── vite.config.ts
  │   └── tsconfig.json
+ |
  ├── package.json
  ├── .gitignore
  └── README.md
@@ -64,16 +71,22 @@ This template leverages:
   - `vite.config.ts` is located at `frontend/config/vite.config.ts`
   - `tailwind.config.cjs` is located at `frontend/config/tailwind.config.cjs`
   - `shadcn.config.js` is located at `frontend/config/shadcn.config.js`
+  - `postcss.config.js` is located at `frontend/config/postcss.config.js`
 
 - **Backend Configuration:**  
   - General configuration is in `backend/config/config.js`
   - Database connection settings are in `backend/config/database.js`
 
-_Note: Some configuration files (e.g., `tsconfig.json`) remain in the project root of their respective directories as required by tooling._
+_Note: Some configuration files (eg. in frontend/ `vite.config.ts`, `tsconfig.json`) remain in the project root of their respective directories as required by tooling._
 
 ## Next Steps
 
-- Customize routes, React components, and database models as needed.
-- To switch to Supabase, update the connection logic in `backend/config/database.js`.
+- Delete the current frontend and backend implementations in `App.tsx`, `index.css`, `app.js`, `index.js` etc.
+- Customize your own routes, React components (eg. use Shadcn UI components), Database Schemas etc.
+- If you have any questions, ask ChatGPT!
+
+_To switch to Supabase, update the connection logic in `backend/config/database.js`._
+
+
 
 Enjoy building your full-stack web app! 

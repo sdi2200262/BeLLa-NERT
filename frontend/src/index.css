@@ -189,6 +189,54 @@ body {
     background: linear-gradient(to right, transparent, rgba(255,255,255,1), transparent);
     margin: 2.5rem 0;
   }
+
+  /* Tech stack grid animations */
+  .tech-stack-grid {
+    @apply grid grid-cols-4 gap-1.5 mt-6;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: top;
+    will-change: transform, max-height, opacity, padding, margin;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tech-stack-grid-enter {
+    opacity: 1;
+    max-height: 300px;
+    transform: scaleY(1);
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .tech-stack-grid-exit {
+    opacity: 0;
+    max-height: 0;
+    transform: scaleY(0.95);
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  /* Apple Watch style icon container */
+  .tech-icon-container {
+    @apply flex items-center justify-center;
+    transition: all 0.1s cubic-bezier(0.2, 0, 0.2, 1);
+    background: transparent;
+    border-radius: 12px;
+    padding: 0.2rem;
+  }
+
+  .tech-icon-container:hover {
+    transform: scale(1.15);
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  /* Icon styling */
+  .tech-icon {
+    @apply w-12 h-12;
+  }
 }
 
 /* Enhanced fade-in keyframes */
@@ -209,9 +257,31 @@ body {
   }
 }
 
-/* Remove global text glow effects */
-* {
-  text-shadow: none !important;
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 1000px;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 1000px;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+    max-height: 0;
+  }
 }
 
 

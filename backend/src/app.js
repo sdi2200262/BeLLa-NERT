@@ -4,6 +4,7 @@ const db = require('../config/database'); // Initializes the database connection
 require('dotenv').config();
 
 const app = express();
+const config = require('../config/config');
 
 // Enable CORS for frontend
 app.use(cors());
@@ -17,7 +18,7 @@ app.get('/', (req, res) => {
         <div style="max-width: 600px;">
           <h1 style="font-size: 4.5rem; margin-bottom: 0.5rem;">BeLLa</h1>
           <div style="height: 1px; background: linear-gradient(to right, transparent, white, transparent); margin: 2.5rem 0;"></div>
-          <h2 style="color: rgba(255,255,255,0.9); margin-bottom: 1rem;">Backend Server is running at port 5000</h2>
+          <h2 style="color: rgba(255,255,255,0.9); margin-bottom: 1rem;">Backend Server is running at port ${config.port}</h2>
           <p style="color: rgba(255,255,255,0.6); margin-bottom: 1rem;">The API is ready to accept requests.</p>
           <p style="color: rgba(255,255,255,0.6);">
             Try the API endpoint at: 

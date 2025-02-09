@@ -11,7 +11,7 @@ export function ServerStatus() {
     setLoading(true)
     setError(null)
     setMessage('')
-    fetch('http://localhost:5000/api')
+    fetch('http://localhost:5001/api')
       .then(res => res.json())
       .then(data => {
         setMessage(data.message)
