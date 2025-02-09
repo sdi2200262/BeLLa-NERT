@@ -1,4 +1,6 @@
-# Full Stack Monorepo Template
+# BeLLa NERT
+An open-source full-stack web-app template.
+
 
 This template offers:
 - Organized file structure
