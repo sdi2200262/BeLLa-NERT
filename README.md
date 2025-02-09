@@ -1,8 +1,13 @@
 # Full Stack Monorepo Template
 
-Organized file structure, Shadcn UI components, frontend-backend separation, all with a one command setup with Vite.
+This template offers:
+- Organized file structure
+- Shadcn UI components
+- Frontend-Backend separation
 
-This template leverages:
+...all with a one command setup with Vite.
+
+## Stack
 - **Backend**: Node.js, Express.js, and MongoDB (default – change to Supabase if desired)
 - **Frontend**: React (with TypeScript), Shadcn UI, and Tailwind CSS (v3 for Shadcn UI support)
 
