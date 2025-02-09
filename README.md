@@ -55,12 +55,18 @@ A clean and organized file structure as a base for your next web application.
 
 ## Getting Started
 
+0. **Use this Template**
+   - Click the green "Use this template" button above
+   - Choose "Create a new repository"
+   - Fill in your repository details
+   - Click "Create repository from template"
+
 1. **Clone the repository:**
    Clone the repository and navigate to the project directory.
    _Use WSL if working on Windows._
    ```
-   git clone https://github.com/sdi2200262/BeLLa-NERT.git
-   cd BeLLa-NERT
+   git clone https://github.com/sdi2200262/your-repo-name.git
+   cd your-repo-name
    ```
 
 2. **Install dependencies:**
@@ -104,3 +110,8 @@ _To switch to Supabase, update the connection logic in `backend/config/database.
 - If you have any questions, view the documentation or ask ChatGPT!
 
 Enjoy building your full-stack web app! 
+
+
+## License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
