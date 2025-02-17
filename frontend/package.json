@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --config ./config/vite.config.ts",
-    "build": "tsc && vite build --config ./config/vite.config.ts",
-    "preview": "vite preview --config ./config/vite.config.ts"
+    "dev": "vite --config vite.config.ts",
+    "build": "tsc && vite build --config vite.config.ts",
+    "preview": "vite preview --config vite.config.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",

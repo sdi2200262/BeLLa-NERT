@@ -129,7 +129,7 @@ function App() {
               <img 
                 src="/favicon_large.png" 
                 alt="Logo" 
-                className="w-16 h-16 opacity-60 hover:opacity-90 transition-opacity"
+                className="w-8 h-8 opacity-60 hover:opacity-90 transition-opacity"
               />
             </a>
           </div>

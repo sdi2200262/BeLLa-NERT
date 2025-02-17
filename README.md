@@ -1,3 +1,5 @@
+![BeLLa NERT](./frontend/public/favicon_large.png)
+
 # BeLLa NERT
 An open-source full-stack web-app template.
 
